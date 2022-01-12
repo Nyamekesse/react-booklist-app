@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "text": "School time",
+      "day": "2022-01-10",
+      "time": "17:50",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Gaming Time",
+      "day": "2022-01-11",
+      "time": "17:52",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}

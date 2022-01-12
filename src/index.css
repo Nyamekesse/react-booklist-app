@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Poppins;
+  src: url(./Poppins/Poppins-Regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 4% auto 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5em 3%;
+  min-height: 300px;
+  border: 1px solid #999;
+  border-radius: 1rem;
+}
+header {
+  padding: 0.5em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.2em;
+  flex-wrap: wrap;
+  width: 100%;
+}
+header h2 {
+  font-size: 1.6rem;
+}
+.btn {
+  background-color: #666;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.3em 1em;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.task {
+  width: 100%;
+  /* min-height: 300px; */
+}
+.col {
+  padding: 0.5em 0.8em;
+  background-color: #eeeeee;
+  margin: 0.8em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activeReminder {
+  border-left: 3px solid green;
+}
+.eachTask h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.form {
+  width: 100%;
+}
+.formArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formArea label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.3em 0;
+}
+.formArea input {
+  width: 100%;
+  padding: 0.2em;
+  outline: none;
+  font-size: 1.2rem;
+}
+.formReminder {
+  flex-wrap: wrap;
+  margin: 1em 0 0.1em 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.formReminder label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 50%;
+}
+input[type="checkBox"] {
+  cursor: pointer;
+}
+input[type="submit"] {
+  width: 100%;
+  margin: 0.8em 0 0.3em 0;
+  border: none;
+  background-color: black;
+  color: #fff;
+  padding: 0.4em 0;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  letter-spacing: 0.1rem;
+}
+.null {
+  color: #333;
+  text-align: center;
+  margin-bottom: 100%;
+}
+.null p {
+  font-size: 1.2rem;
 }
